@@ -1,0 +1,366 @@
+:root {
+  --font1: 'Bungee';
+  --font2: 'PT Sans Caption';
+  --black: #302E37;
+  --black-darker: #232128;
+  --red: #FF3838;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #F4F4F4;
+}
+#container-all {
+  width: 100%;
+  height: 3200px;
+  background-color: #F4F4F4;
+}
+#container-menu {
+  background-color: var(--red);
+  height: 60px;
+  position: relative;
+}
+#red-part {
+  background-color: var(--red);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#black-part {
+  background-color: var(--black);
+  height: 60px;
+}
+ /* -- Menu -- */
+#menu-btn {
+  margin: 0 auto;
+  width: 260px;
+  height: 60px;
+  background-color: var(--black);
+  color: #fff; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+#menu-btn p { 
+  font-family: var(--font1);
+  font-size: 28px;
+}
+/* -- MENU OPEN -- */
+#menu-container {
+  width: 500px;
+  height: 308px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+}
+#menu-itens-cont {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  cursor: pointer;
+}
+.menu-item p{
+  color: #fff;
+  font-family: var(--font1);
+  font-size: 24px;
+  text-align: center;
+}
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-item:hover {
+  background-color: #fff;
+}
+.menu-item:hover a {
+  color: var(--black);
+}
+.menu-item::after {
+  width: 80%;
+  height: 1px;
+  content: "";
+  background-color: white;
+  display: block;
+  color: #fff;
+  margin: 0 auto;
+}
+#menu:hover #menu-container {
+  display: block;
+}
+/* -- HEADER --  */
+#random-btn {
+  width: 300px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -40px;
+  cursor: pointer;
+}
+#random-btn button {
+  border: none;
+  background-color: #fff;
+  font-size: 28px;
+  font-family: var(--font2);
+  font-weight: bold;
+  color: var(--red);
+  cursor: pointer;
+}
+#random-btn:active {
+  transform: scale(0.97);
+}
+#logo {
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+#logo p {
+  font-family: var(--font1);
+  font-size: 80px;
+  color: #fff;
+  line-height: 30px;
+  padding-left: 30px;
+}
+#search-btn {
+  width: 300px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.397);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -40px;
+}
+#search-btn img {
+  cursor: pointer;
+}
+#inpt-search {
+  outline: none;
+  border: none;
+  font-size: 28px;
+  font-family: var(--font2);
+  font-weight: bold;
+  color: #fff;
+  width: 200px;
+  background-color: transparent;
+}
+#inpt-search::placeholder {
+  color: #fff;
+}
+#container-content {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 2;
+  margin-top: -100px;
+  display: flex;
+}
+#left-sect {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: var(--font2);
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+.line-title {
+  margin-top: 10px;
+  height: 2px;
+  width: 70%;
+  background-color: var(--black-darker);
+  color: #fff;
+}
+#all-pokemons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 0px;
+}
+.container-pokemon {
+  width: 300px;
+  height: 400px;
+  border: 2px solid #000;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container-pokemon img {
+  width: min-content;
+  height: min-content;
+  margin: 20px 0px 0px 0px;
+}
+.container-pokemon p {
+  font-family: var(--font1);
+  font-size: 24px;
+}
+.line-pokecard {
+  width: 80%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 10px;
+}
+.blocks {
+  margin-top: 10px;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block-type {
+  background-color: yellowgreen;
+  width: 40%;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.close-btn-cont img{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.close-btn-cont img:hover {
+  transform: scale(1.3);
+  transition: all 0.1s ease-in-out;
+}
+
+/* -- PROFILE -- */
+#right-sect {
+  width: 40%;
+  background-color: #ECECEC;
+}
+h2 {
+  font-family: var(--font2);
+  font-size: 48px;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+#profile-card {
+  background-color: #fff;
+  margin: 40px auto;
+  width: 90%;
+  height: 1050px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profile-photo {
+  width: min-content;
+  height: min-content;
+  margin-top: 40px;
+}
+#trainer-title {
+  font-family: var(--font1);
+  font-size: 28px;
+}
+.profile-line {
+  width: 70%;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 40px;
+}
+#info-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font2);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.info-line {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.padR-20 {
+  padding-right: 20px;
+}
+.inpt-info {
+  border: none;
+  outline: none;
+  font-family: var(--font2);
+  font-size: 32px;
+  max-width: 220px;
+  height: fit-content;
+  text-align: right;
+}
+#level {
+  padding-left: 50px;
+}
+#icon-lvl {
+  padding-left: 15px;
+}
+.edit-icon {
+  width: 30px; 
+  height: 30px; 
+  cursor: pointer;
+}
+.left-profile {
+  text-align: left;
+}
+.right-profile {
+  text-align: right;
+  margin-left: 60px;
+  font-weight: bold;
+}
+#left-profile p, #right-profile p {
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: var(--font1);
+  line-height: 50px;
+  font-size: 32px;
+  font-weight: bold;
+  padding-top: 40px;
+  text-align: center;
+}
+#pokefav {
+  margin-top: 40px;
+}
+#pokefav-name {
+  font-family: var(--font1);
+  font-size: 28px;
+  margin-top: 20px;
+}
+.btn-card {
+  width: 70%;
+  height: 80px;
+  font-size: 38px;
+  border: none;
+  outline: none;
+  background-color: var(--black);
+  color: #fff;
+  border-radius: 10px;
+  font-family: var(--font2);
+  font-weight: bold;
+  display: block;
+  margin: 40px auto;
+  cursor: pointer;
+}
+.btn-card:active {
+  transform: scale(0.97);
+}

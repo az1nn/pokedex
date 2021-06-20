@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Pokédex</title>
+  <link rel="stylesheet" href="pokedex-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container-all">
+    <div id="menu">
+      <div id="container-menu">
+        <div id="menu-btn">
+          <p>MENU</p>
+          <img src="../assets/img/pokedex/menu btn.png" alt="">
+        </div>
+
+        <div id="menu-container">
+          <div id="menu-itens-cont">
+            <div class="menu-item">
+              <p><a href="../pokedex page/index.html">Minha Pokédex</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../random page/index.html">Pokémon Aleatório</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../compare page/index.html">PokéComparador</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../evolutions page/index.html">Evoluções</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../login page/index.html">Sair</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="red-part">
+      <div id="random-btn">
+        <img src="../assets/img/pokedex/random.png" alt="">
+        <button>Randomizar</button>
+      </div>
+      <div id="logo">
+        <img src="../assets/img/pokedex/logo.png" alt="">
+        <p>pokedex</p>
+      </div>
+      <div id="search-btn">
+        <input type="text" name="" id="inpt-search" placeholder="Pesquisar">
+        <img src="../assets/img/pokedex/search.png" alt="">
+      </div>
+    </div>
+    <div id="black-part">
+    </div>
+
+    <div id="container-content">
+      <div id="left-sect">
+        <h1>Pokémons Favoritos</h1>
+        <span class="line-title">.</span>
+
+        <div id="all-pokemons">
+        </div>
+      </div>
+      
+      <div id="right-sect">
+        <h2>Meu Perfil</h2>
+
+        <div id="profile-card">
+          <img src="../assets/img/pokedex/profile icon.png" alt="" id="profile-photo">
+          <p id="trainer-title">Treinador(a)</p>
+          <span class="profile-line"></span>
+          <div id="info-card">
+              <div class="info-line">
+                <p class="padR-20">Nome:</p>
+                <input type="text" class="inpt-info" id="inpt-name" maxlength="11" disabled>
+                <img class="edit-icon" src="../assets/img/pokedex/edit.png" alt="" id="edit-name" onclick="editInfoName()">
+              </div>
+              <div class="info-line">
+                <p class="padR-20">Idade:</p>
+                <input type="text" class="inpt-info" id="inpt-age" maxlength="3" disabled>
+                <img class="edit-icon" src="../assets/img/pokedex/edit.png" alt="" id="edit-age" onclick="editInfoAge()">
+              </div>
+              <div class="info-line">
+                <p class="padR-20">Nível:</p>
+                <select class="inpt-info" name="level" id="level" disabled>
+                  <option value="iniciante">Iniciante</option>
+                  <option value="medio">Médio</option>
+                  <option value="expert">Expert</option>
+                </select>
+                <img class="edit-icon" id="icon-lvl" src="../assets/img/pokedex/edit.png" alt="" id="edit-lvl" onclick="editInfoLevel()">
+              </div>
+          </div>
+          <h3>Pokémon Favorito:</h3>
+          <img src="../assets/img/pokedex/poke fav.png" alt="" id="pokefav">
+          <p id="pokefav-name"></p>
+        </div>
+        <button class="btn-card">COMPARTILHAR</button>
+        <button class="btn-card">SAIR</button>
+      </div>
+    </div>
+  </div>
+  
+<script src="../js/apiRequest.js"></script>
+<script src="../js/infoData.js"></script>
+<script src="../js/fetchpoke.js"></script>
+</body>
+</html>

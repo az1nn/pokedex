@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokémon Aleatório - Pokédex</title>
+  <link rel="stylesheet" href="compare-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container-all">
+    <div id="menu">
+      <div id="container-menu">
+        <div id="menu-btn">
+          <p>MENU</p>
+          <img src="../assets/img/pokedex/menu btn.png" alt="">
+        </div>
+
+        <div id="menu-container">
+          <div id="menu-itens-cont">
+            <div class="menu-item">
+              <p><a href="../pokedex page/index.html">Minha Pokédex</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../random page/index.html">Pokémon Aleatório</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../compare page/index.html">PokéComparador</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../evolutions page/index.html">Evoluções</a></p>
+            </div>
+            <div class="menu-item">
+              <p><a href="../login page/index.html">Sair</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="red-part">
+      <div id="random-btn">
+        <img src="../assets/img/pokedex/random.png" alt="">
+        <button>Randomizar</button>
+      </div>
+      <div id="logo">
+        <img src="../assets/img/pokedex/logo.png" alt="">
+        <p>pokedex</p>
+      </div>
+      <div id="search-btn">
+        <input type="text" name="" id="inpt-search" placeholder="Pesquisar">
+        <img src="../assets/img/pokedex/search.png" alt="">
+      </div>
+    </div>
+    <div id="black-part">
+    </div>
+
+    <div id="container-content">
+      <div id="left-sect">
+        <h1>Pokémons</h1>
+        <span class="line-title"></span>
+        <div>
+          <select name="sortby" id="sortby">
+            <option value="a-z">Ordem Alfabética(A-Z)</option>
+            <option value="z-a">Ordem Alfabética(Z-A)</option>
+          </select>
+          
+        </div>
+
+        <div id="all-pokemons">
+          <div class="container-pokemon">
+            <p>Squirtle</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="right-sect">
+        <h2>Info</h2>
+        <div id="profile-card">
+          <img src="../assets/img/pokedex/pokemon photo.png" alt="" id="profile-photo">
+          <p id="poke-title">Squirtle</p>
+          <span class="profile-line"></span>
+          <div id="info-card">
+            <div id="left-profile">
+              <p>ID:</p>
+              <p>Altura:</p>
+              <p>Peso:</p>
+            </div>
+            <div id="right-profile">
+              <p>32</p>
+              <p>1</p>
+              <p>5</p>
+            </div>
+          </div>
+          <h3>Tipo:</h3>
+          <div id="type-container">
+            <div class="type-card"></div>
+            <div class="type-card"></div>
+          </div>
+          <h3>Golpes:</h3>
+          <div id="moves-container">
+            <div class="moves-card"></div>
+            <div class="moves-card"></div>
+            <div class="moves-card"></div>
+            <div class="moves-card"></div>
+          </div>
+        </div>
+        <button class="btn-card">FAVORITAR</button>
+        <button class="btn-card">COMPARAR</button>
+        <button class="btn-card">EVOLUÇÕES</button>
+        <button class="btn-card">COMPARTILHAR</button>
+      </div>
+    </div>
+  </div>
+
+<script src="../js/apiRequest.js"></script>
+</body>
+</html>

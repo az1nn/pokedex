@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Pokédex</title>
+  <link rel="stylesheet" href="login-style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container-all">
+    <div id="header">
+      <header>
+        <img src="../assets/img/login-resgister/image 2.png" alt="" id="poke-logo">
+        <h1>Pokédex</h1>
+      </header>
+    </div>
+    <div id="login-container">
+      <h2>Login</h2>
+      <h3>Seja Bem Vindo, Treinador(a)</h3>
+      <form action="">
+        <div class="inpt-login">
+          <img src="../assets/img/login-resgister/user 1.png" alt="" class="icon-login">
+          <input type="email" name="inpt-email" id="inpt-email" placeholder="Email">
+        </div>
+        <div class="inpt-login">
+          <img src="../assets/img/login-resgister/lock 1.png" alt="" class="icon-login">
+          <input type="password" name="inpt-pword" id="inpt-pword" placeholder="Senha">
+        </div>
+        <span id="error-msg">Email e/ou senha errados, tente novamente</span>
+        <button id="btn-login">ENTRAR</button>
+      </form>
+    </div>
+    <div id="container-register">
+      <button onclick="location.href='../register page/index.html';">Registrar-se</button>
+    </div>
+  </div>
+
+<script src="../js/login.js"></script>  
+</body>
+</html>
