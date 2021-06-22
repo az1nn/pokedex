@@ -5,12 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokémon Aleatório - Pokédex</title>
-  <link rel="stylesheet" href="compare-style.css">
+  <link rel="stylesheet" href="random-style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div id="container-all">
+  <div id="container-all" onclick="closeSearch()">
     <div id="menu">
       <div id="container-menu">
         <div id="menu-btn">
@@ -52,6 +52,11 @@
       <div id="search-btn">
         <input type="text" name="" id="inpt-search" placeholder="Pesquisar">
         <img src="../assets/img/pokedex/search.png" alt="">
+        <div id="search-results-div">
+          <div id="search-results" class="hidden">
+          
+          </div>
+        </div>
       </div>
     </div>
     <div id="black-part">
@@ -61,26 +66,23 @@
       <div id="left-sect">
         <h1>Pokémons</h1>
         <span class="line-title"></span>
-        <div>
-          <select name="sortby" id="sortby">
-            <option value="a-z">Ordem Alfabética(A-Z)</option>
-            <option value="z-a">Ordem Alfabética(Z-A)</option>
-          </select>
+
+        <div id="all-pokemons">
           
         </div>
 
-        <div id="all-pokemons">
-          <div class="container-pokemon">
-            <p>Squirtle</p>
-          </div>
+        <p id="page">Página 1</p>
+        <div id="pages-container">
+          <button onclick="prevPage()"><</button>
+          <button onclick="nextPage()">></button>
         </div>
       </div>
       
       <div id="right-sect">
         <h2>Info</h2>
         <div id="profile-card">
-          <img src="../assets/img/pokedex/pokemon photo.png" alt="" id="profile-photo">
-          <p id="poke-title">Squirtle</p>
+          <img src="" alt="" id="profile-photo">
+          <p id="poke-title"></p>
           <span class="profile-line"></span>
           <div id="info-card">
             <div id="left-profile">
@@ -89,22 +91,22 @@
               <p>Peso:</p>
             </div>
             <div id="right-profile">
-              <p>32</p>
-              <p>1</p>
-              <p>5</p>
+              <p id="idPoke"></p>
+              <p id="hPoke"></p>
+              <p id="wPoke"></p>
             </div>
           </div>
           <h3>Tipo:</h3>
           <div id="type-container">
-            <div class="type-card"></div>
-            <div class="type-card"></div>
+            <div class="type-card-clear" id="type-card1"><p id="type1"></p></div>
+            <div class="type-card-clear" id="type-card2"><p id="type2"></p></div>
           </div>
           <h3>Golpes:</h3>
           <div id="moves-container">
-            <div class="moves-card"></div>
-            <div class="moves-card"></div>
-            <div class="moves-card"></div>
-            <div class="moves-card"></div>
+            <div class="moves-card"><p id="moves1"></p></div>
+            <div class="moves-card"><p id="moves2"></p></div>
+            <div class="moves-card"><p id="moves3"></p></div>
+            <div class="moves-card"><p id="moves4"></p></div>
           </div>
         </div>
         <button class="btn-card">FAVORITAR</button>
@@ -116,5 +118,6 @@
   </div>
 
 <script src="../js/apiRequest.js"></script>
+<script src="../js/searchPoke.js"></script>
 </body>
 </html>
