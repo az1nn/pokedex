@@ -14,7 +14,7 @@ body {
 }
 #container-all {
   width: 100%;
-  height: 3200px;
+  height: 1900px;
   background-color: #F4F4F4;
 }
 #container-menu {
@@ -175,6 +175,10 @@ body {
   border: black 2px solid;
   border-collapse: collapse;
   cursor: pointer;
+}
+.result-card:hover {
+  background-color: black;
+  color: #fff;
 }
 #inpt-search {
   outline: none;
@@ -466,6 +470,18 @@ h3 {
 .steel {
   background-color: rgb(49, 49, 49);
 }
+.ghost {
+  background-color: rgb(212, 212, 212);
+}
+.fighting {
+  background-color: rgb(231, 98, 98);
+}
+.fairy {
+  background-color: rgb(243, 119, 243);
+}
+.dark {
+  background-color: rgb(70, 70, 70);
+}
 #moves-container {
   width: 70%;
   height: 140px;
@@ -505,4 +521,10 @@ h3 {
 }
 .btn-card:active {
   transform: scale(0.97);
+}
+/* -- FOOTER -- */
+#container-footer {
+  width: 100%;
+  height: 60px;
+  background-color: var(--black);
 }
