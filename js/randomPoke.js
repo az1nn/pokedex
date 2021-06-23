@@ -44,5 +44,4 @@ const getPokemonInfoRandom = async() => {
 function randomNum() {
   id = Math.floor(Math.random() * (1118 - 1) + 1)
   getPokemonInfoRandom()
-  console.log(id)
 }
