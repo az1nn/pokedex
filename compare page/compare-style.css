@@ -14,7 +14,7 @@ body {
 }
 #container-all {
   width: 100%;
-  height: 3200px;
+  height: 1600px;
   background-color: #F4F4F4;
 }
 #container-menu {
@@ -51,7 +51,7 @@ body {
 /* -- MENU OPEN -- */
 #menu-container {
   width: 500px;
-  height: 308px;
+  height: 247px;
   display: none;
   position: absolute;
   left: 50%;
@@ -141,18 +141,39 @@ body {
 #search-btn img {
   cursor: pointer;
 }
+#change-poke{
+  display: flex;
+  align-items: center;
+}
 #inpt-search {
   outline: none;
   border: none;
-  font-size: 28px;
+  font-size: 24px;
   font-family: var(--font2);
   font-weight: bold;
-  color: #fff;
+  color: rgb(0, 0, 0);
   width: 200px;
   background-color: transparent;
 }
 #inpt-search::placeholder {
-  color: #fff;
+  color: rgb(173, 171, 171);
+  font-family: var(--font2);
+  font-weight: 600;
+}
+#inpt-search2 {
+  outline: none;
+  border: none;
+  font-size: 24px;
+  font-family: var(--font2);
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  width: 200px;
+  background-color: transparent;
+}
+#inpt-search2::placeholder {
+  color: rgb(173, 171, 171);
+  font-family: var(--font2);
+  font-weight: 600;
 }
 #container-content {
   width: 90%;
@@ -196,6 +217,7 @@ h1 {
   justify-content: space-around;
   border: 1px solid black;
   border-radius: 30px;
+  position: relative;
 }
 .change-poke input {
   border: none;
@@ -207,6 +229,55 @@ h1 {
 .change-poke img {
   width: 30px;
   cursor: pointer;
+}
+#search-results {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  width: 80%;
+  background-color: #2321289f ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
+  z-index: 10;
+}
+#search-results2 {
+  position: absolute;
+  left: 30px;
+  top: 60px;
+  width: 80%;
+  background-color: #2321289f ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 500px;
+  z-index: 10;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.result-card {
+  width: 100%;
+  background-color: #fff;
+  font-family: var(--font1);
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 0px;
+  border: black 2px solid;
+  border-collapse: collapse;
+  cursor: pointer;
+}
+.result-card:hover {
+  background-color: black;
+  color: #fff;
 }
 #all-pokemons {
   width: 70%;
@@ -246,11 +317,14 @@ h1 {
   justify-content: space-between;
 }
 .block-type {
-  background-color: yellowgreen;
+  background-color: rgb(150, 150, 150);
   width: 40%;
   height: 50px;
   margin-bottom: 20px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .close-btn-cont img{
   width: 40px;

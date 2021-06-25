@@ -29,7 +29,7 @@ const fetchPokemon = async() => {
             <p>${poke.name}</p>
             </div>`
   }).join('')
-}
+}   
 
 fetchPokemon()
 

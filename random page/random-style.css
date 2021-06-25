@@ -51,7 +51,7 @@ body {
 /* -- MENU OPEN -- */
 #menu-container {
   width: 500px;
-  height: 308px;
+  height: 247px;
   display: none;
   position: absolute;
   left: 50%;
@@ -151,9 +151,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-}
-#search-results {
   overflow-y: scroll;
   overflow-x: hidden;
   max-height: 500px;
@@ -164,7 +161,6 @@ body {
 .visible {
   visibility: visible;
 }
-
 .result-card {
   width: 100%;
   background-color: #fff;
@@ -188,6 +184,7 @@ body {
   font-weight: bold;
   color: #fff;
   width: 200px;
+  padding-left: 10px;
   background-color: transparent;
 }
 #inpt-search::placeholder {
