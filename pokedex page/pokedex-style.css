@@ -385,3 +385,102 @@ h3 {
 .btn-card:active {
   transform: scale(0.97);
 }
+
+/* -- RESPONSIVO -- */
+
+@media (max-width: 1024px) {
+  #logo p  {
+    padding-left: 10px;
+    font-size: 60px;
+  }
+  #random-btn {
+    width: 280px;
+  }
+  #search-btn {
+    width: 280px;
+  }
+  .container-pokemon {
+    width: 220px;
+  }
+  .container-pokemon p {
+    font-size: 22px;
+  }
+  #container-content {
+    width: 98%;
+  }
+  #left-sect {
+    width: 55%;
+  }
+  #right-sect {
+    width: 45%;
+  }
+  .info-line {
+    width: 90%;
+  }
+  .info-line p {
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  #container-all {
+    width: 100vw;
+  }
+  #left-sect {
+    width: 50%;
+  }
+  #right-sect {
+    width: 50%;
+  }
+  h1 {
+    font-size: 36px
+  }
+  .container-pokemon {
+    width: 140px;
+  }
+  .container-pokemon p {
+    font-size: 18px;
+  }
+  .info-line p {
+    font-size: 20px;
+  }
+  .inpt-info {
+    font-size: 26px;
+    width: 200px;
+  }
+  .btn-card {
+    font-size: 32px;
+  }
+}
+@media (max-width: 425px) {
+  #container-all {
+    width: 200vw;
+  }
+  .menu-item {
+    height: 25%;
+  }
+  .menu-item p {
+    line-height: 62px;
+  }
+  .container-pokemon {
+    width: 160px;
+  }
+}
+@media (max-width: 375px) {
+  .container-pokemon {
+    width: 220px;
+  }
+}
+@media (max-width: 320px) {
+  #container-all {
+    width: 200vw;
+  }
+  h1 {
+    font-size: 22px
+  }
+  #left-sect {
+    width: 40%;
+  }
+  #right-sect {
+    width: 60%;
+  }
+}

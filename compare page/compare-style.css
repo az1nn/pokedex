@@ -385,3 +385,61 @@ h1 {
 .btn-fav:hover {
   transform: scale(1.02);
 }
+
+/* -- RESPONSIVO --  */
+
+@media (max-width: 1024px)  {
+  .container-pokemon {
+    width: 340px;
+  }
+  #changepoke1 {
+    margin-right: 100px;
+  }
+  #all-pokemons {
+    width: 80%;
+  }
+}
+@media (max-width: 768px)  {
+  .container-pokemon {
+    width: 280px;
+  }
+  #changepoke1 {
+    margin-right: 60px;
+  }
+  #all-pokemons {
+    width: 90%;
+  }
+  .id-container {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  #container-all {
+    width: 200vw;  
+  }
+  .container-pokemon {
+    width: 300px;
+  }
+  #menu-container {
+    left: 100%;
+  }
+  .menu-item {
+    height: 25%;
+  }
+  .menu-item p {
+    line-height: 62px;
+  }
+}
+@media (max-width: 375px) {
+  #container-all {
+    width: 250vw;  
+  }
+  .container-pokemon {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .container-pokemon {
+    width: 280px;
+  }
+}

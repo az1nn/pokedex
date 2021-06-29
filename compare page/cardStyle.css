@@ -146,4 +146,22 @@
 #moves1, #moves2, #moves3, #moves4, #moves1-2, #moves2-2, #moves3-2, #moves4-2{
   font-family: var(--font1);
   font-size: 12px;
+  line-height: 20px;
+}
+
+/* -- RESPONSIVO -- */
+
+@media (max-width: 768px)  {
+  #type-container {
+    width: 85%;
+  }
+  #moves-container {
+    width: 85%;
+  }
+  .type-card {
+    width: 47.5%;
+  }
+  .block-type {
+    width: 47.5%;
+  }
 }
