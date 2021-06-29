@@ -138,3 +138,174 @@ form {
 #container-register button:hover {
   transform: scale(0.97);
 }
+
+/* -- RESPONSIVIDADE --  */
+
+@media (min-width: 1441px) {
+  h1 {
+    font-size: 160px;
+  }
+  #poke-logo {
+    height: 160px;
+  }
+  h2 {
+    font-size: 80px;
+    padding: 100px 0 40px 0;
+  }
+  h3 {
+    font-size: 32px;
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  .inpt-login, #btn-login {
+    width: 840px;
+    height: 120px;
+  }
+  .inpt-login {
+    margin-bottom: 60px;
+  }
+  .inpt-login input {
+    font-size: 40px;
+  }
+  .icon-login {
+    padding: 0 40px;
+    width: 70px;
+  }
+  #btn-login {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  #error-msg {
+    font-size: 32px;
+  }
+  #container-register button {
+    width: 340px;
+    height: 100px;
+    font-size: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  #poke-logo {
+    height: 100px;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  #login-container {
+    width: 50%;
+  }
+  .inpt-login, #btn-login {
+    width: 380px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .inpt-login input {
+    width: 60%;
+  }
+  #btn-login {
+    margin-top: 10px;
+  }
+  #container-register button {
+    width: 140px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  #login-container {
+    width: 60%;
+  }
+  #container-register {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+  }
+  #container-register button {
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 425px) {
+  #container-all {
+    height: 113vh;
+  }
+  #header {
+    height: 15%;
+  }
+  #poke-logo {
+    height: 50px;
+    padding: 0px 10px;
+  }
+  h1 {
+    font-size: 50px;
+    padding-right: 10px;
+  }
+  #login-container {
+    width: 50%;
+    height: 65%;
+  }
+  h2 {
+    padding: 30px 0 15px 0;
+    font-size: 32px;
+  }
+  h3 {
+    padding: 30px 30px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  #login-container {
+    width: 90%;
+  }
+  .inpt-login {
+    width: 320px;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-160px);
+  }
+  #btn-login {
+    width: 320px;
+    height: 60px;
+    margin-left: 50%;
+    transform: translateX(-160px);
+    margin-top: 40px;
+  }
+  #error-msg {
+    text-align: center;
+    margin-left: 3.5%;
+    font-size: 14px;
+  }
+  #container-register {
+    top: auto;
+    bottom: -40px;
+    right: auto;
+    left: 50%;
+    transform: translateX(-65px);
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    padding-right: 2px;
+  }
+  #poke-logo {
+    padding-right: 2px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .inpt-login, #btn-login {
+    width: 260px;
+    margin-left: 50%;
+    transform: translateX(-130px);
+  }
+  .icon-login {
+    width: 30px;
+  }
+  #btn-login {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+  #error-msg {
+    font-size: 11px;
+  }
+}
