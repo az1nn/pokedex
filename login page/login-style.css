@@ -259,7 +259,7 @@ form {
   .inpt-login {
     width: 320px;
     height: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-left: 50%;
     transform: translateX(-160px);
   }
