@@ -141,7 +141,7 @@ form {
 
 /* -- RESPONSIVIDADE --  */
 
-@media (min-width: 1441px) {
+@media (min-width: 2560px) {
   h1 {
     font-size: 160px;
   }
