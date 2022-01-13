@@ -1,58 +1,26 @@
-<p align="center"><img src="logo.png" /></p>
+<h1 align="center"> Pokédex APP (Js Vanilla) </h1>
 
-<h1 align="center"> Project Title - Readme.md HTML Template </h1>
-
-<p align="center"> Intro - Boilerplate for Readme.md on Github </p>
+<p align="center"> Dados disponibilizados pela PokéAPI</p>
 
 <hr/>
 
-<p> Describe you project -> I hate to always "reinvent" README.md on GitHub that is why I decided to make this Starter README.md template. Also I prefer HTML syntax because I use HTML every day and it has some extra features like center the elements. </p>
+<p> Plataforma de uma Pokédex com diversas funções, como por exemplo: Favoritar, Comparar e Editar Perfil. </p>
 
-<h3> List of features </h3>
-
-<ul>
-  <li>Beautiful Starter Template for README.md</li>
-  <li>Key feature num. 2</li>
-  <li>Key feature num. 3</li>
-  <li>Key feature num. 4</li>
-</ul>
-
-<h3> Demo -> Show me what you got </h3>
-
-<a href="#"> Link to your awesome Demo </a>
-
-<a href="#"> Another Link to your awesome Demo </a>
-
-<a href="https://www.designinspiration.info/"> Design Fonts Inspiration </a>
-
-<h3> Code Demo </h3>
-
-```html
-
-We will use markdown for the Syntax Highlighting
+<h3> Features: </h3>
 
 <ul>
-  <li>Beautiful Starter Template for README.md</li>
-  <li>Key feature num. 2</li>
-  <li>Key feature num. 3</li>
-  <li>Key feature num. 4</li>
+  <li>Favoritar Pokemons ou remover dos favoritos</li>
+  <li>Comparar as infos de 2 Pokemons ao mesmo tempo</li>
+  <li>Editar perfil</li>
+  <li>Login e Registro em Localstorage</li>
 </ul>
 
-```
+<h3> Acessar:</h3>
 
-<h3> Download & Installation </h3>
+<a href="https://az1nn.github.io/pokedex/login-page/index.html"> Login Page </a>
+<a href="https://az1nn.github.io/pokedex/random-page/index.html"> Pulando o Login/Registro </a>
 
-```shell
-$ npm i boilerplate-readme-template
-```
-<h3>Contributing</h3>
-Keep it simple. Keep it minimal. Don't put every single feature just because you can.
-
-<h3>Authors or Acknowledgments</h3>
+<h3>Autor:</h3>
 <ul>
-  <li>Vladimir Carrer</li>
+  <li>Alan Sá</li>
 </ul>
-
-<h3>License</h3>
-
-This project is licensed under the MIT License
