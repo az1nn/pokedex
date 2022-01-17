@@ -12,7 +12,7 @@ function loginTest() {
   event.preventDefault();
 
   if (email.value == regEmail && pword.value == regPword){
-    window.location.href = "../random%20page/index.html"
+    window.location.href = "../random-page/index.html"
   } else {
     errmsg.style.visibility = "visible"
   }

@@ -12,6 +12,6 @@ function register(){
   localStorage.setItem("pokefav", inptPokefav.value)
   localStorage.setItem("pword", inptPword.value)
 
-  window.location.href = "../random%20page/index.html"
+  window.location.href = "../random-page/index.html"
 }
 btn.addEventListener("click", register)
