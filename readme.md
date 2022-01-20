@@ -17,8 +17,12 @@
 
 <h3> Acessar:</h3>
 
-<a href="https://az1nn.github.io/pokedex/login-page/index.html"> Login Page </a><br>
-<a href="https://az1nn.github.io/pokedex/random-page/index.html"> Pulando o Login/Registro </a>
+<li><a href="https://az1nn.github.io/pokedex/login-page/index.html"> Login Page </a></li>
+<li><a href="https://az1nn.github.io/pokedex/random-page/index.html"> Pulando o Login/Registro </a></li>
+
+<h3>Autor:</h3>
+
+![Screenshot](/docs/loginpage.png)
 
 <h3>Autor:</h3>
 <ul>
