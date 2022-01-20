@@ -1,6 +1,6 @@
 <h1 align="center"> Pokédex APP (Js Vanilla) </h1>
 
-<p align="center"> Dados disponibilizados pela PokéAPI</p>
+<p align="center"> Dados consumidos pela <a href="https://pokeapi.co/">PokéAPI</a></p>
 
 <hr/>
 
@@ -20,9 +20,12 @@
 <li><a href="https://az1nn.github.io/pokedex/login-page/index.html"> Login Page </a></li>
 <li><a href="https://az1nn.github.io/pokedex/random-page/index.html"> Pulando o Login/Registro </a></li>
 
-<h3>Autor:</h3>
+<h3>Imagens:</h3>
 
-![Screenshot](/docs/loginpage.png)
+<img src="/docs/randompage.png" width="50%"></img>
+<img src="/docs/loginpage.png" width="50%"></img>
+<img src="/docs/comparepage.png" width="50%"></img>
+<img src="/docs/register.png" width="50%"></img>
 
 <h3>Autor:</h3>
 <ul>
